@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         :root {
+            --oxford-blue: #0b132bff;
+            --space-cadet: #1c2541ff;
+            --cadet-blue: #4da1a9ff;
+            --wheat: #edd4b2ff;
+            --mountbatten-pink: #9a7aa0ff;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Raleway", sans-serif;
+            color: #777;
+        }
+        
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bgimg-1 {
+            background-image: url("img/tokyo.jpg");
+            min-height: 100%;
+        }
+        
+        .bgimg-2 {
+            background-image: url("img/imagineering.jpg");
+            min-height: 400px;
+        }
+        
+        .bgimg-3 {
+            background-image: url("img/cmmnd.png");
+            min-height: 400px;
+        }
+        
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+        
+        .caption span.border {
+            background-color: var(--oxford-blue);
+            color: var(--wheat);
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+        
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Raleway", sans-serif;
+            color: #111;
+        }
+        /* Turn off parallax scrolling for tablets and phones */
+        
+        .toResume {
+            top: 10%;
+            width: 100%;
+            right: 10%;
+            text-align: right;
+            color: #000;
+            position: absolute;
+        }
+        
+        .resumeButton {
+            background-color: var(--space-cadet);
+            color: var(--wheat);
+            padding: 18px;
+            font-size: 16px;
+            letter-spacing: 6px;
+        }
+        
+        .headers {
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+            background-color: transparent;
+            font-size: 35px;
+            color: var(--wheat);
+        }
+        
+        .blockForText {
+            color: #ddd;
+            background-color: #282E34;
+            text-align: center;
+            padding: 5em 15em;
+            text-align: justify;
+        }
+        
+        .titleForBlock {
+            color: var(--wheat);
+            background-color: transparent;
+            text-align: center;
+            top: 1em;
+            font-size: x-large;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+        /* CSS HEX */
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg-1">
+        <div class="toResume">
+            <a class="resumeButton" href="https://drive.google.com/file/d/1WPi9M0jbwAtVQjWsxIvFWxaKqeurGUjf/view?usp=sharing">RESUME</a>
+        </div>
+        <div class="caption">
+            <span class="border">AMANDA HAN</span>
+        </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Hi! I'm Amanda.</h3>
+        <p>I'm a software developer interested in computer graphics and computer vision. Right now, I'm a junior Computer Science major at UCLA (go Bruins!). You can take a look at my professional work as an intern at Walt Disney Imagineering and Dolby Laboratories,
+            as well as my computer graphics work down below.
+        </p>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="headers">PROFESSIONAL EXPERIENCE</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="blockForText">
+            <p class="titleForBlock">Walt Disney Imagineering</p>
+            <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="blockForText">
+            <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border"><a href="mailto: aliyuanh@ucla.edu" style="color:#ddd ">Email me!</a></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

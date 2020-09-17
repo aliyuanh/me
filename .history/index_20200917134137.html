@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         :root {
+            --oxford-blue: #0b132bff;
+            --space-cadet: #1c2541ff;
+            --cadet-blue: #4da1a9ff;
+            --wheat: #edd4b2ff;
+            --mountbatten-pink: #9a7aa0ff;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Raleway", sans-serif;
+            color: #777;
+            scroll-behavior: smooth;
+        }
+        
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-boids,
+        .bgimg-raytracer,
+        .bgimg-3d4e {
+            position: relative;
+            opacity: 0.75;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bgimg-1 {
+            background-image: url("img/tokyo.jpg");
+            min-height: 100%;
+        }
+        
+        .bgimg-2 {
+            background-image: url("img/imagineering.jpg");
+            min-height: 400px;
+        }
+        
+        .bgimg-3 {
+            background-image: url("img/dolby.jpg");
+            min-height: 400px;
+        }
+        
+        .bgimg-boids {
+            background-image: url("img/boids.png");
+            min-height: 400px;
+        }
+        
+        .bgimg-raytracer {
+            background-image: url("img/raytracer.png");
+            min-height: 400px;
+        }
+        
+        .bgimg-3d4e {
+            background-image: url("img/table3D4E.JPG");
+            min-height: 400px;
+        }
+        
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+        
+        .caption span.border {
+            background-color: var(--oxford-blue);
+            color: var(--wheat);
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+        
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Raleway", sans-serif;
+            color: #111;
+        }
+        /* Turn off parallax scrolling for tablets and phones */
+        
+        .toResume {
+            top: 10%;
+            width: 100%;
+            right: 10%;
+            text-align: right;
+            color: #000;
+            position: absolute;
+        }
+        
+        .resumeButton {
+            background-color: var(--space-cadet);
+            color: var(--wheat);
+            padding: 18px;
+            font-size: 16px;
+            letter-spacing: 6px;
+        }
+        
+        .headers {
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+            background-color: transparent;
+            font-size: 35px;
+            color: var(--wheat);
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .blockForText {
+            color: #ddd;
+            background-color: #282E34;
+            text-align: center;
+            padding: 5em 15em;
+            text-align: justify;
+        }
+        
+        .titleForBlock {
+            color: var(--wheat);
+            background-color: transparent;
+            text-align: center;
+            top: 1em;
+            font-size: x-large;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .toSections {
+            color: var(--mountbatten-pink);
+            background-color: var(--space-cadet);
+            width: fit-content;
+            padding: 1em;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+        /* CSS HEX */
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg-1">
+        <div class="toResume">
+            <a class="resumeButton" href="https://drive.google.com/file/d/1WPi9M0jbwAtVQjWsxIvFWxaKqeurGUjf/view?usp=sharing">RESUME</a>
+        </div>
+        <div class="caption">
+            <span class="border">AMANDA HAN</span>
+        </div>
+        <div class="caption" style="top:60%;">
+            <div class="border" style="margin:auto;">
+                <a href="#professional" class="toSections">professional</a>
+                <a href="$projects" class="toSections">projects</a>
+                <a href="#personal" class="toSections">personal</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Hi! I'm Amanda.</h3>
+        <p>I'm a software developer interested in computer graphics and computer vision. Right now, I'm a junior Computer Science major at UCLA (go Bruins!). You can take a look at my professional work as an intern at Walt Disney Imagineering and Dolby Laboratories,
+            as well as my computer graphics work down below.
+        </p>
+    </div>
+
+    <div class="bgimg-2" id="professional">
+        <div class="caption">
+            <span class="headers">PROFESSIONAL EXPERIENCE</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="blockForText">
+            <p class="titleForBlock">Walt Disney Imagineering</p>
+            <p>The winter quarter of my sophomore year (Jan 2020-Apr 2020), I was a software development intern in Imagineering's Tech Studio. At Imagineering, I worked on a variety of projects including a CGI/CAD webtool (details under NDA).
+            </p>
+            <p>
+                Technologies used: .NET Core, Azure App Service, Snowflake, Python, REST APIs, 3D APIs
+            </p>
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="blockForText">
+            <p class="titleForBlock">Dolby Laboratories</p>
+            <p>As part of my summer internship at Dolby's Enterprise Applications team, I completed a full-stack website using the .NET Core MVC framework in C# for external partner companies. The motivation for this is to provide an external service to
+                the employees of Dolby partner companies.
+            </p>
+            <p>
+                BACKEND: As the developer for this project, I used Okta's REST API for user authentication and management. Using Visual Studio, I built this website and hosted it on a Windows server.
+            </p>
+            <p>
+                FRONTEND: For the frontend, I used the Bootstrap Library as well as Dolby's CSS library to create a interactive user interface. The frontend was programmed in HTML/CSS/Javascript, with C# embedded using Razor pages.
+            </p>
+        </div>
+    </div>
+
+    <div class="bgimg-boids" id="projects">
+        <div class="caption">
+            <span class="headers">PROJECTS</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="blockForText">
+            <p class="titleForBlock">Examining Realistic Animation for Bird Flight Locomotion and Flocking Behavior </p>
+            <p class="titleForBlock" style="font-size:medium; top: 1em;"> An exploration into realistic and intelligent boids</p>
+            <p>For a more detailed look at our work, check out <a href="https://drive.google.com/file/d/1roD6f6O2y-D9oC9Y6kRLfV5ygv2Oxyie/view?usp=sharing">our presentation</a> or <a href="https://drive.google.com/file/d/1EKCrtCoSiOdHSjfQbJRRv11yyhfx--Px/view?usp=sharing">our paper</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="bgimg-raytracer">
+        <div class="caption">
+            <span class="headers"></span>
+        </div>
+    </div>
+    <div style="position:relative;">
+        <div class="blockForText">
+            <p class="titleForBlock">Raytracer</p>
+            <p>Personal project...</p>
+        </div>
+    </div>
+
+
+    <div class="bgimg-3d4e" id="personal">
+        <div class="caption">
+            <span class="headers">Personal</span>
+        </div>
+    </div>
+    <div style="position:relative;">
+        <div class="blockForText">
+            <p class="titleForBlock">3D4E</p>
+            <p>vp...</p>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border"><a href="mailto: aliyuanh@ucla.edu" style="color:#ddd ">Email me!</a></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
